@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>박은수의 차트 에디터</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+<div class="container">
+  <h1>박은수의 차트 에디터</h1>
+
+  <section>
+    <h2>1. 그래프</h2>
+    <div id="chart" class="chart"></div>
+  </section>
+
+  <section>
+    <h2>2. 테이블 에디터</h2>
+    <table>
+      <thead>
+      <tr><th>ID</th><th>Value</th><th>Action</th></tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+    <button id="apply-table">Apply Changes</button>
+  </section>
+
+  <section>
+    <h2>3. 값 추가</h2>
+    <input id="new-id" type="number" placeholder="ID (1 이상)" />
+    <input id="new-value" type="number" placeholder="Value (0 이상)" />
+    <button id="add-btn">Add</button>
+  </section>
+
+  <section>
+    <h2>4. JSON 편집</h2>
+    <textarea id="json-editor" rows="10"></textarea>
+    <button id="apply-json">Apply JSON</button>
+  </section>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
